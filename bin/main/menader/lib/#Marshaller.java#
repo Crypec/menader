@@ -1,0 +1,44 @@
+package menader.lib;
+
+import menader.model.*;
+import com.google.gson.*;
+import java.util.*;
+import lombok.*;
+
+@Data
+public class Marshaller {
+
+	public Marshaller() {
+		this.name = new Name();
+		this.birthDate = new Date();
+		this.ahv = new AHV();
+	}
+
+
+  // FIXME(Simon): we need to store more than one ahv number.
+  private Name name;
+  private Date birthDate;
+  private AHV ahv;
+
+  private List<Name> names = new ArrayList<>();
+
+  private List<Child> children = new ArrayList<>();
+  private List<Security> securities = new ArrayList<>();
+
+  public void add(Security sec) {
+	this.securities.add(sec);
+  }
+
+  public void add(Child child) {
+	this.children.add(child);
+  }
+
+  public void add(Name name) {
+	this.names.add(name);
+  }
+
+  @Override
+  public String toString() {
+	return new GsonBuilder().setPrettyPrinting().serializeNulls().create().toJson(this);
+  }
+}
