@@ -185,12 +185,11 @@ public class PassProcessor extends AbstractProcessor {
 
 		var applyAll = MethodSpec.methodBuilder("applyAll")
 			.addModifiers(Modifier.PUBLIC, Modifier.STATIC)
-			.returns(Marshaller.class)
+			.returns(void.class)
 			.addParameter(Document.class, "doc")
-			.addStatement("$T m = new $T()", Marshaller.class, Marshaller.class)
+            .addParameter(Marshaller.class, "m")
 			.addStatement("applySafe(doc, m)")
 			.addStatement("applyUnsafe(doc, m)")
-			.addStatement("return m")
 			.build();
 
 

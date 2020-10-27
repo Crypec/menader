@@ -47,8 +47,18 @@ public class AHV {
 	return Character.getNumericValue(csStr.charAt(lastIndex));
   }
 
-  @Override
+	@Override
 	public String toString() {
 		return Long.toString(this.nr);
-  }
+	}
+
+	public String formatWithDots() {
+		var digits = Long.toString(this.nr);
+		return String.format("%s.%s.%s.%s", digits.substring(0, 3), digits.substring(3, 7), digits.substring(7, 11), digits.substring(11, 13));
+	}
+
+	public String formatedWithoutDots() {
+		return Long.toString(this.nr);
+	}
+
 }

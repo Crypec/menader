@@ -36,7 +36,7 @@ public class Util {
 
   public static LocalDate randomDate(LocalDate lower, LocalDate upper) {
 	 long startEpochDay = lower.toEpochDay() ;
-	 long endEpochDay = lower.toEpochDay();
+	 long endEpochDay = upper.toEpochDay();
 	 long randomDay = randomLong(startEpochDay, endEpochDay);
 	 return LocalDate.ofEpochDay(randomDay);
   }

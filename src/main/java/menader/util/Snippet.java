@@ -10,7 +10,7 @@ import org.apache.commons.lang3.RandomStringUtils;
 @Setter
 public abstract class Snippet implements Serializable {
 
-  public static final int LOWER_BOUND = 10;
+  public static final int LOWER_BOUND = 999;
 
   private StringBuilder lexeme = new StringBuilder();
 

@@ -46,6 +46,6 @@ public class Name {
 
   @Override
   public String toString() {
-	return new GsonBuilder().setPrettyPrinting().serializeNulls().create().toJson(this);
+      return String.format("%s %s", this.first, this.last);
   }
 }
