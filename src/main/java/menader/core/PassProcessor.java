@@ -17,7 +17,7 @@ import org.dom4j.Document;
 import menader.lib.*;
 
 @SupportedAnnotationTypes({ "menader.lib.SafePass", "menader.lib.UnsafePass"})
-@SupportedSourceVersion(SourceVersion.RELEASE_14)
+@SupportedSourceVersion(SourceVersion.RELEASE_11)
 public class PassProcessor extends AbstractProcessor {
 
 	// NOTE(Simon): this is a bit hacky, but the the java annotation processor may run multiple times during one compilation phase
