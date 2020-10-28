@@ -1,4 +1,4 @@
-package menader.lib;
+package menader.model;
 
 import java.time.LocalDate;
 import org.dom4j.Document;
