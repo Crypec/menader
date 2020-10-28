@@ -12,6 +12,7 @@ public class Address {
 	public int zipCode;
 	public String town;
 	public String country;
+	public int municipalityID;
 
 	public static Address random() {
 		var addr = new Address();
