@@ -17,7 +17,9 @@ public class Util {
   }
 
   public static Document readDocument(String path) throws DocumentException, IOException {
-		return new SAXReader().read(path);
+		var reader = new SAXReader();
+		reader.setEncoding("UTF-8");
+		return reader.read(path);
   }
 
   public static void writeDocument(Document doc, String path) throws IOException {
