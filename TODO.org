@@ -1,0 +1,13 @@
+#+Title:Feature Validationpass
+
+* Validationpass
+*** TODO tag spelling
+*** TODO check for duplicate contents
+
+* Example 1.
+
+#+BEGIN_SRC XML
+<name>simon</name>
+<name_sp>simon</name_sp>
+#+END_SRC
+If we have a pass which changes the contnent of name, we should report that the same content is still in "name_sp".
