@@ -10,7 +10,7 @@ plugins {
 	// Apply the java-library plugin to add support for Java Library
 	id 'java-library'
 	id "io.freefair.lombok" version "5.2.1"
-
+	id 'com.github.sherter.google-java-format' version '0.9'
 }
 
 group "org.sample"

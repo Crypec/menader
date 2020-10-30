@@ -17,6 +17,6 @@ public class XPath {
   public static final String PRECEDING_SIBLING = "preceding-sibling::";
 
   public static String descendantOrSelf(String elem) {
-	return DESCENDANT_OR_SELF + elem;
+    return DESCENDANT_OR_SELF + elem;
   }
 }
