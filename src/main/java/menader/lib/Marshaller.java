@@ -4,15 +4,14 @@ import com.google.gson.*;
 import java.util.*;
 import lombok.*;
 import menader.model.*;
-import org.dom4j.Document;
 import org.iban4j.Iban;
 
 @Data
 public class Marshaller {
 
-  public Marshaller(Document doc) {
-    this.primary = new Person(doc);
-    this.partner = new Person(doc);
+  public Marshaller() {
+    this.primary = new Person();
+    this.partner = new Person();
     this.bankName = "TestBank";
   }
 

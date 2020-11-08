@@ -36,7 +36,8 @@ dependencies {
 	implementation group: 'org.apache.commons', name: 'commons-csv', version: '1.8'
 	implementation group: 'org.iban4j', name: 'iban4j', version: '3.2.1'
 	implementation group: 'org.tinylog', name: 'tinylog', version: '1.3.6'
-
+	implementation "com.github.tomas-langer:chalk:1.0.2"
+	implementation 'com.github.mpkorstanje:simmetrics-core:4.1.1'
 	// This dependency is used internally, and not exposed to consumers on their own compile classpath.
 	implementation 'com.google.guava:guava:29.0-jre'
 
