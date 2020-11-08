@@ -27,9 +27,7 @@ public class PassProcessor extends AbstractProcessor {
 
   @Override
   public boolean process(Set<? extends TypeElement> annotations, RoundEnvironment env) {
-
-    var elems = env.getElementsAnnotatedWith(SafePass.class);
-    if (elems.isEmpty() || this.isFinished) {
+    if (this.isFinished) {
       return true;
     }
 
